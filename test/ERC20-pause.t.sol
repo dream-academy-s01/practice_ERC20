@@ -12,7 +12,7 @@ contract DreamTokenTest2 is Test {
     ERC20 drm;
 
     function setUp() public {
-        drm = new ERC20();
+        drm = new ERC20("DREAM", "DRM");
         drm.transfer(alice, 50 ether);
         drm.transfer(bob, 50 ether);
     }
